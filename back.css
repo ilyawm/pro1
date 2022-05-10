@@ -16,8 +16,12 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
+@font-face {
+    font-family: 'myiransans';
+    src: url("fonts/IRANSansWeb.ttf") format("truetype"), url("fonts/IRANSansWeb.eot") format("eot"), url("fonts/IRANSansWeb.woff") format("woff"), url("fonts/IRANSansWeb.woff2") format("woff2"), url("fonts/IRANSans.svg") format("svg");
+}  
 *{
-    font-family: iransans;
+    font-family: myiransans;
     text-decoration: none !important;
     direction: rtl;
 }
@@ -36,6 +40,7 @@ time, mark, audio, video {
 .titer{
     font-size: 40px;
     position: absolute;
+    text-align: center;
     margin-top: 75px;
     color: #fff;
     text-shadow: -2px 5px 3px rgb(34, 34, 34);
@@ -51,6 +56,11 @@ time, mark, audio, video {
     text-align: center;
     margin: 139px 15px 0px;
     font-size: 1.6em;
+}
+@media (max-width:401px) {
+    .subtit{
+        margin-top: 180px;
+    }
 }
 .wizard {
     margin: 20px auto;
@@ -83,7 +93,7 @@ time, mark, audio, video {
 
 .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
     color: #555555;
-    cursor: default;
+    cursor: pointer;
     border: 0;
     border-bottom-color: transparent;
 }
@@ -162,7 +172,6 @@ span.round-tab:hover {
     position: relative;
     padding-top: 50px;
 }
-
 .wizard h3 {
     margin-top: 0;
 }
@@ -194,7 +203,27 @@ span.round-tab:hover {
     }
 }
 .t-cnd{
-    background: #005b60;
-    height: 38vh;
     border-radius: 0.3em;
+}
+.disabled{
+    pointer-events: none !important;
+}
+.t-cnd div ul{
+    display: flex;
+    justify-content: start;
+}
+
+.btn-lgg{
+    font-size: 1.5em !important;
+}
+.b-mg{
+    margin-top: 8em;
+}
+.form-select{
+    padding: .8em !important;
+}
+@media (max-width:387px) {
+    .b-mg{
+        margin-top: 7em;
+    }
 }
