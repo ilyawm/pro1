@@ -6,7 +6,10 @@
         <link rel="stylesheet" href="back.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.rtl.min.css" type="text/css">
-        <script src="https://kit.fontawesome.com/7ba58ea840.js" crossorigin="anonymous"></script>
+        <link href="fontawsome/fontawesome.min.css" rel="stylesheet">
+        <link href="fontawsome/solid.min.css" rel="stylesheet">
+        <link href="fontawsome/brands.min.css" rel="stylesheet">
+        <link href="fontawsome/all.min.css" rel="stylesheet">
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -29,32 +32,32 @@
                         <ul class="nav nav-tabs" role="tablist">
         
                             <li role="presentation" class="active">
-                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="مرحله 1">
                                     <span class="round-tab">
-                                        <i class="glyphicon glyphicon-folder-open"></i>
+                                        <i class="fa-solid fa-1"></i>
                                     </span>
                                 </a>
                             </li>
         
                             <li role="presentation" class="disabled">
-                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="مرحله 2">
                                     <span class="round-tab">
-                                        <i class="glyphicon glyphicon-pencil"></i>
+                                        <i class="fa-solid fa-2"></i>
                                     </span>
                                 </a>
                             </li>
                             <li role="presentation" class="disabled">
-                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="مرحله 3">
                                     <span class="round-tab">
-                                        <i class="glyphicon glyphicon-picture"></i>
+                                        <i class="fa-solid fa-3"></i>
                                     </span>
                                 </a>
                             </li>
         
                             <li role="presentation" class="disabled">
-                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="کامل شد">
                                     <span class="round-tab">
-                                        <i class="glyphicon glyphicon-ok"></i>
+                                        <i class="fa-solid fa-4"></i>
                                     </span>
                                 </a>
                             </li>
@@ -66,25 +69,136 @@
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <label class="text-light fw-bold fs-4"> نوع سایت را انتخاب نمایید </label>
                                 <select class="form-select form-select-lg">
-                                    <option class="fs-3">شرکتی</option>
-                                    <option class="fs-3">فروشگاهی</option>
-                                    <option class="fs-3">تک صحفه ای</option>
+                                    <option class="fs-4">شرکتی</option>
+                                    <option class="fs-4">فروشگاهی</option>
+                                    <option class="fs-4">خدماتی</option>
+                                    <option class="fs-4">شخصی</option>
+                                    <option class="fs-4">میوه فروشی</option>
                                 </select>
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="btn btn-primary btn-lgg b-mg next-step">ذخیره و ادامه</button></li>
+                                    <li><button type="button" class="btn btn-primary btn-lgg mt-4 next-step">ذخیره و ادامه</button></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step2">
-                                
-                                <ul class="list-inline pull-right">
-                                    <li><button type="button" class="btn btn-outline-light btn-lgg prev-step">قبلی</button></li>
+                             <div class="row">
+                                <div class="bistscript-box col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/somah.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> میوه فروشی و سبزی فروشی آنلاین </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/alborzkala.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> البرز کالا </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/avaye-edalat.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> سایت وکالت </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/bazareweb.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> بازار وب </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/caspian-breng.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> برنج کاسپین </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/kamyaraccount.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> کامیار اکانت </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/karsin.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> کارسین </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 d-flex justify-content-center align-items-stretch">
+                                                <div class="card mb-4">
+                                                    <div class="custom-sublayer">
+                                                        <img src="img/medicsho.jpg" class="img-fluid card-img card-img-top">
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3"> فروش دوره های پزشکی </h4>
+                                                        <h4 class="card-title text-success mb-4"> قیمت : 900/000 تومان </h4>
+                                                        <a href="#"><button class="btn btn-lg w-100 btn-primary mb-2"> مشاهده </button></a>
+                                                        <button class="btn btn-lg w-100 btn-success"> انتخاب </button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                            </div>
+                        </div>
+                                <ul class="list-inline pull-right mt-5 ms-4">
+                                    <li><button type="button" class="btn btn-light btn-lgg prev-step">قبلی</button></li>
                                     <li><button type="button" class="btn btn-primary btn-lgg next-step">ذخیره و ادامه</button></li>
                                 </ul>
-                            </div>
+                        </div>
+                        </div>
                             <div class="tab-pane" role="tabpanel" id="step3">
                                 
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="btn btn-default btn-outline-light btn-lgg prev-step">قبلی</button></li>
+                                    <li><button type="button" class="btn btn-default btn-light btn-lgg prev-step">قبلی</button></li>
                                     <li><button type="button" class="btn btn-primary btn-lgg btn-info-full next-step">ذخیره و ادامه</button></li>
                                 </ul>
                             </div>

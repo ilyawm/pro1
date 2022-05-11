@@ -17,11 +17,11 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 @font-face {
-    font-family: 'myiransans';
+    font-family: 'iransans';
     src: url("fonts/IRANSansWeb.ttf") format("truetype"), url("fonts/IRANSansWeb.eot") format("eot"), url("fonts/IRANSansWeb.woff") format("woff"), url("fonts/IRANSansWeb.woff2") format("woff2"), url("fonts/IRANSans.svg") format("svg");
 }  
 *{
-    font-family: myiransans;
+    font-family: iransans;
     text-decoration: none !important;
     direction: rtl;
 }
@@ -36,6 +36,21 @@ time, mark, audio, video {
     height:97vh;
     background-size: cover;
     position: relative;
+}
+@media (max-height:725px) {
+    #baner{
+        height: 110vh;
+    }
+}
+@media (max-height:640px) {
+    #baner{
+        height: 120vh;
+    }
+}
+@media (max-height:585px) {
+    #baner{
+        height: 140vh;
+    }
 }
 .titer{
     font-size: 40px;
@@ -69,7 +84,7 @@ time, mark, audio, video {
 
     .wizard .nav-tabs {
         position: relative;
-        margin: 40px auto;
+        margin: 0px auto;
         margin-bottom: 0;
         border-bottom-color: #e0e0e0;
     }
@@ -216,14 +231,25 @@ span.round-tab:hover {
 .btn-lgg{
     font-size: 1.5em !important;
 }
-.b-mg{
-    margin-top: 8em;
-}
 .form-select{
     padding: .8em !important;
 }
-@media (max-width:387px) {
-    .b-mg{
-        margin-top: 7em;
-    }
+.nav-tabs > li > a:hover {
+    border-color: transparent !important;
+}
+.bistscript-box{
+    height:300px;
+    background:transparent;
+    overflow-y:scroll;
+}
+.custom-sublayer {
+    display: flex !important;
+    position: relative !important;
+  }
+.custom-over {
+    background-color: #3270FC !important;
+    color: #fff !important;
+}
+.custom-del1 {
+    text-decoration: line-through !important;
 }
